@@ -2,4 +2,4 @@
 // TODO 2) bestscore(in local storage),текущая сумма очков, цель
 // TODO 3) смена цветов, transitions + responsive
 // Числа умножаются друг на друга
-// Методы массивов, reduse reduce.right*//
+// цикл for с шагом 4

@@ -1,25 +1,4 @@
 
-//get array of elements
-
-let blocks = document.getElementsByClassName('block');
-// console.log(arr);
-blocks = Array.prototype.slice.call(blocks);
-console.log(blocks);
-blocks.forEach(function(block) {
-    console.log(block.innerHTML);
-});
-
-let reducer = (accumulator, currentValue) => accumulator + currentValue;
-
-console.log(blocks.reduce(reducer));
-
-console.log(blocks.reduce(reducer, 15));
-
-//Rendom function
-// document.getElementById('btn-restart').onclick = function(rendom) {
-
-//}
-
 
 document.getElementById('game-container').onclick = function(event) {
     console.log(event);
@@ -30,6 +9,36 @@ document.getElementById('game-container').onclick = function(event) {
     }
 
 }
+//get array of elements
+let blocks = document.getElementsByClassName('block');
+console.log(blocks);
+
+
+for (i=0; i<blocks.length; i++){
+
+
+    let dataBlock = document.getElementsByClassName('block').item(i).innerHTML;
+    console.log('В блоке №'+ i + ' ' + 'Сейчас записано значение' + ' ' + dataBlock);
+
+}
+
+//
+// if (document.getElementsByClassName('block').item(0).innerHTML != dataBlock.item(1)) {
+//     // noinspection JSAnnotator
+//     dataBlock.item(1) = dataBlock.item(0);
+// }
+// else {
+//     dataBlock++;
+// }
+
+
+//Rendom function
+// document.getElementById('btn-restart').onclick = function(rendom) {
+
+//}
+
+
+
 
 
 //Move function
